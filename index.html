@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Jumping Dinosaur</title>
+  </head>
+  <body>
+    
+    <div class="gameScreen" id="game">
+
+      <div class="distanceMeter" id="distanceMeter">Distance: 0 m</div>
+
+      <div class="mainGame" id="mainGame">
+        <div class="dinoHome" id="dinoHome">
+          <img src="img/dinosaur.png" class="dino" id="dino" alt="Dinosaur" />
+        </div>
+        <div class="cactuses" id="cactuses"></div>
+      </div>
+
+      <h2 class="gameOver" id="gameOver">Game Over</h2>
+
+    </div>
+
+    <div class="buttons">
+      <button class="restartBtn" id="restartBtn">Restart</button>
+      <button class="playBtn" id="playBtn">Play</button>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

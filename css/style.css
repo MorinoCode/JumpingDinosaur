@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.gameScreen {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.mainGame {
+  background-color: aliceblue;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.dinoHome {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dino {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-left: 2rem;
+  z-index: 1;
+  bottom: 0;
+  transition: bottom 0.4s ease-in-out;
+}
+
+.cactuses {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.cactus {
+  position: absolute;
+  bottom: 255px;
+  width: 40px;
+  height: 40px;
+  animation: moveCactus 5s linear forwards;
+}
+
+@keyframes moveCactus {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -50px;
+  }
+}
+
+.gameOver {
+  position: absolute;
+  left: 50%;
+  bottom: 70%;
+  display: none;
+  font-size: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.restartBtn, .playBtn {
+
+  padding: 0.7rem 1rem;
+  font-weight: bold;
+  border: 2px solid lightblue;
+  background-color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+.playBtn {
+    display: block;
+}
+.distanceMeter {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  border: 2px solid lightblue;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
